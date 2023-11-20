@@ -49,11 +49,25 @@ come risultato.
 Utilizzare la funzione sommaNumeri per stampare il risultato ottenuto.
 */
 
+let arrayNumbers = [10, 5, 22, 8, 33, 45, 80, 72, 53, 66];
+let sum = 0;
+
+sommaNumeri(arrayNumbers);
 
 
 
 
 // ------------------------------- FUNZIONI ---------------------------------------
+
+// SOMMA NUMERI
+
+function sommaNumeri() { 
+    for (let i = 0; i < arrayNumbers.length; i++) {
+        sum += arrayNumbers[i];
+    }
+    console.log(sum);
+}
+
 
 
 // GENERA NUMERO RANDOM
